@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Preview</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      /* Add any custom styles here */
+    </style>
+  </head>
+  <body>
+    <div id="preview-container"></div>
+
+    <script>
+      function fetchWebsiteContent(url, callback) {
+        const proxyUrl = "https://api.allorigins.win/raw?url=";
+
+        $.get(proxyUrl + url, function (data) {
+          callback(data);
+        }).fail(function () {
+          callback("<p>Failed to fetch website content.</p>");
+        });
+      }
+
+      function displayWebsiteContent() {
+        const url = "#"; // Replace this with the website URL you want to preview
+        const container = $("#preview-container");
+
+        fetchWebsiteContent(url, function (content) {
+          container.html(content);
+        });
+      }
+
+      displayWebsiteContent();
+    </script>
+  </body>
+</html>
