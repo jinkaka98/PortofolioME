@@ -42,6 +42,8 @@ img {
 
 @media only screen and (max-width: 760px) {
     .container {
+        margin: 0 auto;
+        padding: 0;
         width: 350px;
         height: 720px;
         background-color: #1c253f;
