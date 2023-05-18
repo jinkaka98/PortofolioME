@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>utama</title>
+  </head>
+  <body>
+    <h1>Click Tracker Demo</h1>
+
+    <button onclick="trackClick()">Click Me</button>
+
+    <script>
+      function trackClick() {
+        // Retrieve the current click count from localStorage
+        var clickCount = localStorage.getItem("clickCount");
+
+        // Increment the click count by 1
+        clickCount = clickCount ? parseInt(clickCount) + 1 : 1;
+
+        // Update the click count in localStorage
+        localStorage.setItem("clickCount", clickCount);
+
+        // Redirect to the final page (akhir.html)
+        window.location.href = "akhir.html";
+      }
+    </script>
+  </body>
+</html>
