@@ -48,7 +48,7 @@ img {
         height: 720px;
         background-color: #1c253f;
         border-radius: 40px;
-        margin-top: 10px;
+        /* margin-top: 10px; */
     }
 
     i.nav-icon {
