@@ -79,9 +79,12 @@
         </div>
       </nav>
     </header>
-    <div class="Container">
-      <h1 class="p-3 text-center">Finished Responshif</h1>
-      <div id="carouselExample" class="carousel slide">
+    <div class="container-fluid">
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -105,11 +108,10 @@
             />
           </div>
         </div>
-        <!-- ini yang gak autoplay -->
-        <!-- <button
+        <button
           class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -118,33 +120,12 @@
         <button
           class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> -->
-        <!-- ini yang gak autoplay -->
-        <!-- ini autoplay -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-        <!-- ini autoplay -->
       </div>
     </div>
   </body>
