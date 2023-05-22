@@ -1,0 +1,18 @@
+* {
+    text-align: center;
+
+}
+
+.navbar {
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 900;
+}
+
+.carousel slide {
+    width: fit-content;
+    height: fit-content;
+}
