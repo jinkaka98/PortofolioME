@@ -1,0 +1,8 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+.border-blue {
+    border: 1px solid blue;
+}
