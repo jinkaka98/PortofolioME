@@ -158,3 +158,11 @@ s {
     }
 
 }
+
+
+table {
+    border: 1px soldi #E2E8F0;
+}
+th {
+    border: 1px solid #fff;
+}
